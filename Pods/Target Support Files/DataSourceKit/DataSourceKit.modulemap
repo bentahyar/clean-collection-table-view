@@ -1,0 +1,6 @@
+framework module DataSourceKit {
+  umbrella header "DataSourceKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

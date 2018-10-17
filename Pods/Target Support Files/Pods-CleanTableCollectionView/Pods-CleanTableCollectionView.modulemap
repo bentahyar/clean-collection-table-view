@@ -1,0 +1,6 @@
+framework module Pods_CleanTableCollectionView {
+  umbrella header "Pods-CleanTableCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
