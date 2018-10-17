@@ -20,6 +20,10 @@ class ViewPresenter: ViewInteractorOutput, ViewEventHandler {
         self.router = router
     }
     
+    deinit {
+        print("View Presenter Deinit")
+    }
+    
     //Output Method
     func successAddData(withData data: [News]) {
         view?.showData(withData: data)

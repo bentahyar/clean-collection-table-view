@@ -24,4 +24,8 @@ class ViewWireframe {
         
         return navigationController
     }
+    
+    deinit {
+        print("View Wireframe Deinit")
+    }
 }

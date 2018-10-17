@@ -12,6 +12,10 @@ class ViewInteractor: ViewInteractorInput {
     
     weak var output: ViewInteractorOutput?
     
+    deinit {
+        print("View Interactor Deinit")
+    }
+    
     func addData() {
         let news: [News] = [
             Feed(desc: "Booms boom boom", id: "1", title: "This is feed 1"),

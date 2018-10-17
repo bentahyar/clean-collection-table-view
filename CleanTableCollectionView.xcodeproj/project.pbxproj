@@ -13,7 +13,6 @@
 		8F2A953C2174A7590004CC2B /* MockInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2A953B2174A7590004CC2B /* MockInteractorOutput.swift */; };
 		8F45BB122174649A00F8BC8D /* SectionHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45BB102174649A00F8BC8D /* SectionHeaderCollectionViewCell.swift */; };
 		8F45BB132174649A00F8BC8D /* SectionHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F45BB112174649A00F8BC8D /* SectionHeaderCollectionViewCell.xib */; };
-		8F45BB1521746CFD00F8BC8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F45BB1421746CFD00F8BC8D /* GoogleService-Info.plist */; };
 		8F45BB1D2174917900F8BC8D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45BB1C2174917900F8BC8D /* View.swift */; };
 		8F45BB1F2174922500F8BC8D /* ViewInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45BB1E2174922500F8BC8D /* ViewInteractorIO.swift */; };
 		8F45BB212174923200F8BC8D /* ViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45BB202174923200F8BC8D /* ViewInteractor.swift */; };
@@ -84,7 +83,6 @@
 		8F2A953F2174A7DE0004CC2B /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
 		8F45BB102174649A00F8BC8D /* SectionHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F45BB112174649A00F8BC8D /* SectionHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
-		8F45BB1421746CFD00F8BC8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F45BB1C2174917900F8BC8D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		8F45BB1E2174922500F8BC8D /* ViewInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInteractorIO.swift; sourceTree = "<group>"; };
 		8F45BB202174923200F8BC8D /* ViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInteractor.swift; sourceTree = "<group>"; };
@@ -295,7 +293,6 @@
 				8FE2C493216F46F4009264DC /* Assets.xcassets */,
 				8FE2C495216F46F4009264DC /* LaunchScreen.storyboard */,
 				8FE2C498216F46F4009264DC /* Info.plist */,
-				8F45BB1421746CFD00F8BC8D /* GoogleService-Info.plist */,
 			);
 			path = CleanTableCollectionView;
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F45BB132174649A00F8BC8D /* SectionHeaderCollectionViewCell.xib in Resources */,
-				8F45BB1521746CFD00F8BC8D /* GoogleService-Info.plist in Resources */,
 				8FE55E662175D30300B8245A /* ViewController.xib in Resources */,
 				8FE2C497216F46F4009264DC /* LaunchScreen.storyboard in Resources */,
 				8FE2C494216F46F4009264DC /* Assets.xcassets in Resources */,

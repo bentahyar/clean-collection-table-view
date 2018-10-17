@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanTableCollectionView/ViewController.swift"
-            timestampString = "561458250.528267"
+            timestampString = "561460128.4337699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "showData(withData:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "configureUI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanTableCollectionViewTests/View/ViewTest.swift"
-            timestampString = "561458250.528386"
+            timestampString = "561460128.433852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
