@@ -8,6 +8,7 @@
 
 import UIKit
 import DataSourceKit
+import CoreData
 
 class ViewController: UIViewController, View {
     
@@ -36,9 +37,19 @@ class ViewController: UIViewController, View {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        configureUI()
+        configureNavigation()
         
+        configureUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         presenter?.loadNews()
+        
+        self.collectionView.reloadData()
+    }
+    
+    fileprivate func configureNavigation() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(addTapped))
     }
     
     fileprivate func configureUI() {
@@ -47,6 +58,10 @@ class ViewController: UIViewController, View {
         layout.minimumInteritemSpacing = 0
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+    }
+    
+    @objc fileprivate func addTapped() {
+        presenter?.navigateToAddNews(withNavController: self.navigationController!)
     }
     
     // View Method
@@ -84,17 +99,17 @@ extension ViewController: CellsDeclarator {
         
         for individualNews in news {
             switch individualNews {
-            case is Article:
-                cell(ArticleCollectionViewCell.makeBinder(value: individualNews as! Article))
-                break
-            case is Feed:
-                cell(FeedCollectionViewCell.makeBinder(value: individualNews as! Feed))
-                break
-            case is Caroussel:
-                cell(CarousselCollectionViewCell.makeBinder(value: individualNews as! Caroussel))
-                break
+                case is Article:
+                    cell(ArticleCollectionViewCell.makeBinder(value: individualNews as! Article))
+                    break
+                case is Feed:
+                    cell(FeedCollectionViewCell.makeBinder(value: individualNews as! Feed))
+                    break
+                case is Caroussel:
+                    cell(CarousselCollectionViewCell.makeBinder(value: individualNews as! Caroussel))
+                    break
                 
-            default: break
+                default: break
             }
         }
     }

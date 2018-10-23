@@ -28,4 +28,10 @@ class ViewWireframe {
     deinit {
         print("View Wireframe Deinit")
     }
+    
+    func navigateToAddNews(withNavController navigationController: UINavigationController) {
+        let addNewsWireframe = AddNewsWireframe()
+        
+        addNewsWireframe.presentAddNews(withNavController: navigationController)
+    }
 }

@@ -60,4 +60,13 @@ class PresenterTest: XCTestCase {
         XCTAssert(interactor?.invokedAddData == true, "Expected function to be called")
         XCTAssert(interactor?.invokedAddDataCount == 1, "Expected only called once")
     }
+    
+    func testNavigateToAddNews() {
+        let navController = UINavigationController(rootViewController: view!)
+        
+        eventHandler?.navigateToAddNews(withNavController: navController)
+        
+        XCTAssert(router?.invokedNavigateToAddNews == true, "Expected function to be called")
+        XCTAssert(router?.invokedNavigateToAddNewsCount == 1, "Expected only called once")
+    }
 }

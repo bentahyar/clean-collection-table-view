@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ViewPresenter: ViewInteractorOutput, ViewEventHandler {
     
@@ -36,5 +37,9 @@ class ViewPresenter: ViewInteractorOutput, ViewEventHandler {
     
     func loadNews() {
         interactor.addData()
+    }
+    
+    func navigateToAddNews(withNavController navigationController: UINavigationController) {
+        router.navigateToAddNews(withNavController: navigationController)
     }
 }
